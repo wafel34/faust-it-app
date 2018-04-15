@@ -1,0 +1,14 @@
+<div class="navbar-wrapper">
+    <div class="navbar">
+        <mat-menu #appMenu="matMenu">
+          <button routerLink="/" mat-menu-item>Home</button>
+          <button routerLink="/users"  mat-menu-item>Users</button>
+          <button routerLink="/groups" mat-menu-item>Groups</button>
+        </mat-menu>
+
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+    </div>
+</div>
+<router-outlet></router-outlet>

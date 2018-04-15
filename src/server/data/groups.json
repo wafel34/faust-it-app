@@ -1,0 +1,17 @@
+[
+    {
+        "name": "testGroup",
+        "users": [
+            "user1",
+            "user2"
+        ]
+    },
+    {
+        "name": "clientGroup",
+        "users": [
+            "user1",
+            "user3",
+            "user4"
+        ]
+    }
+]

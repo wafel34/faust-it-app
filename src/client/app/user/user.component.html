@@ -1,0 +1,15 @@
+<mat-card *ngIf="user && !userDeleted">
+    <mat-card-actions>
+        <button routerLink="/users/{{user.name}}"mat-raised-button color="accent">Edit</button>
+        <button (click)="deleteUser(user)" mat-raised-button color="warn">Delete</button>
+    </mat-card-actions>
+    <mat-card-title>{{user.name }}</mat-card-title>
+    <mat-card-subtitle>{{user.firstname}} {{user.surname}}</mat-card-subtitle>
+    <mat-card-content>
+        <p>Date of birth: {{user.birthDate}}</p>
+        <div>User Groups:
+            <p *ngFor="let group of user.userGroups">{{group}}</p>
+        </div>
+    </mat-card-content>
+</mat-card>
+<div *ngIf="userDeleted">User has been deleted.</div>

@@ -1,0 +1,10 @@
+.navbar-wrapper {
+    width: 100%;
+    background-color: lightpink;
+}
+
+.navbar {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5px 0;
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "jonsmith",
+        "password": "jon-smith",
+        "firstname": "Jon",
+        "surname": "Smith",
+        "birthDate": "30-05-1991",
+        "userGroups": [
+            "testgroup"
+        ]
+    },
+    {
+        "name": "jankowalski",
+        "password": "jan-kowalski",
+        "firstname": "Jan",
+        "surname": "kowalski",
+        "birthDate": "30-05-1991",
+        "userGroups": [
+            "clientGroup"
+        ]
+    }
+]

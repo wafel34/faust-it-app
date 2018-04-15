@@ -1,0 +1,20 @@
+<div class="app-container">
+    <h1 class="mat-h1">Users</h1>
+    <ul class="list">
+        <li class="list__item">
+            <span class="id"><strong>ID</strong></span>
+            <span class="name"><strong>Name</strong></span>
+            <span><strong>Veiw</strong></span>
+            <span><strong>Edit</strong></span>
+            <span><strong>Delete</strong></span>
+        </li>
+        <li class="list__item" *ngFor="let user of users; let id=index">
+            <span class="id">{{id+1}}</span>
+            <span class="name">{{user.name}}</span>
+            <button routerLink="/users/{{user.name}}" mat-raised-button color="primary">View</button>
+            <button routerLink="/users/{{user.name}}"mat-raised-button color="accent">Edit</button>
+            <button (click)="deleteUser(user)" mat-raised-button color="warn">Delete</button>
+        </li>
+
+    </ul>
+</div>
